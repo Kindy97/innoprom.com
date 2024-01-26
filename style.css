@@ -1,0 +1,452 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* ---background is body colour, color is for text--- */
+body{
+    background: white;
+    color: blue;
+}
+
+#header{
+width: 100%;
+height: 100vh;
+background-size: cover;
+background-position: center;
+background-image: url(images/background.jpeg);
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.logo{
+    width: 140px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(231, 31, 41);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+
+.header-text{
+    margin-top: 30%;
+    font-size: 70px;
+    color: rgb(20, 0, 90);
+}
+
+.header-text h1{
+    font-size: 45px;
+    margin-top: 30px;
+    color: white;
+}
+
+
+ 
+.bottom-text{
+    font-size: 20px;
+    color: white;
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 280px;
+}
+
+
+/* -----about--- */
+#about{
+    padding: 80px 0;
+    color: gray;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.test0{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-tittle{
+    font-size: 60px;
+    font-weight: 600;
+    color: grey;
+}
+
+
+.tab-tittles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 100;
+    height: 3px;
+    background-color: rgb(25, 13, 197);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 100%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+
+
+/* ----core expertise--- */
+#services{
+    padding: 30px 0;
+}
+
+
+
+.services-list{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 40px;
+    margin-top: 50px;
+    position: relative;  
+}
+
+.services-list div{
+    background: rgb(241, 246, 247);
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div:hover{
+    background: rgb(226, 147, 203);
+    transform: translateY(-10px);
+}
+
+.services-list h2{
+    color: rgb(41, 128, 228);
+    padding: 50px  20px 0;
+}
+
+.services-list p{
+    color: rgb(66, 64, 64);   
+}
+
+
+.test1{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid purple;
+    float: left;
+}
+
+
+/* -----experience--- */
+
+#experience{
+    padding: 50px 0;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: grey;
+}
+
+
+.experience-list{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 40px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.experience-list div{
+    background: skyblue;
+    border-radius: 10px;
+}
+
+.test2{
+    width: 150px;
+    background: white;
+}
+
+.experience-list p{
+    padding: 30px 10px;
+    color: navy;
+}
+
+.experience-list h2{
+    padding: 10px ;
+    color: white;
+}
+
+
+
+/* ----Company Structure--- */
+
+#structure{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/structure\ back.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#structure nav{
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sub-titl{
+    color: grey;
+    font-size: 60px;
+    font-weight: 600px;
+    background: whitesmoke;
+    margin: 10px;
+}
+
+.test3{
+    width: 1000px;
+    height: 800px;
+    padding-top: 100px;
+    margin-left: 30px;
+}
+
+.structure-list{
+    background: whitesmoke;
+    padding: 20px;
+    margin: 280px 0;
+}
+
+.structure-list h2{
+    color: gray;
+    padding: 10px;
+}
+
+.structure-list p{
+    color: gray;
+}
+
+
+
+/* -----contact--- */
+#contact{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/contact.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pic{
+    width: 240px;
+}
+
+.head ul li {
+    list-style: none;
+    margin: 10px 10px;
+    color: grey;
+}
+
+
+.head{
+    background: whitesmoke;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bottom h1 span{
+    color: red;
+}
+
+.bottom{
+    background: whitesmoke;
+    padding: 20px;
+    margin-top: 1000px;
+}
+
+
+
+
+/* -----css for small screens---- */
+nav .fa-solid{
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .header-text{
+        font-size: 50px;
+    }
+    .bottom-text{
+        font-size: 10px;
+        margin-top: 470px;
+    }
+    #about{
+        padding: 20px 0;
+    }
+ 
+    .about-col-2 h1{
+        font-size: 15px;
+    }
+   .about-col-2{
+    font-size: 10px;
+   }
+   .tab-tittles p{
+    font-size: 12px;
+   }
+   #core-expertise h1{
+    font-size: 30px;
+   }
+   .services-list{
+    font-size: 12px;
+   }
+   .services-list h2{
+    font-size: 12px;
+   }
+   #experience h1{
+    font-size: 30px;
+   }
+   .experience-list{
+    font-size: 12px;
+   }
+   #structure h1{
+    font-size: 30px;
+   }
+   .test3{
+    width: 400px;
+    height: 300px;
+   }
+   .structure-list h1{
+    font-size: 30px;
+   }
+   .structure-list p{
+    font-size: 12px;
+   }
+   .structure-list{
+    margin-top: 450px;
+   }
+   .bottom{
+    margin-top: 460px;
+   }
+   nav .fa-solid{
+    display: block;
+    font-size: 25px;
+   }
+   nav ul{
+    background: grey;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 300px;
+    height: 35vh;
+    padding-top: 30px;
+    z-index: 2;
+    transition: right 0.5s;
+   }
+   nav ul li{
+    display: block;
+    margin: 25px;
+   }
+   nav ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+   }
+    nav ul li a{
+    font-size: 12px;
+   }
+  
+}
