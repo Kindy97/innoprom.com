@@ -365,7 +365,7 @@ nav .fa-solid{
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .header-text{
         font-size: 50px;
     }
@@ -431,6 +431,115 @@ nav .fa-solid{
     right: -200px;
     width: 300px;
     height: 35vh;
+    padding-top: 30px;
+    z-index: 2;
+    transition: right 0.5s;
+   }
+   nav ul li{
+    display: block;
+    margin: 25px;
+   }
+   nav ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+   }
+    nav ul li a{
+    font-size: 12px;
+   }
+  
+}
+
+
+@media only screen and (max-width: 390px) {
+    .header-text{
+        font-size: 50px;
+    }
+    .bottom-text{
+        font-size: 10px;
+        margin-top: 170px;
+    }
+    #about{
+        padding: 20px 0;
+    }
+ 
+    .about-col-2 h1{
+        font-size: 15px;
+    }
+   .about-col-2{
+    font-size: 10px;
+   }
+   .tab-tittles p{
+    font-size: 12px;
+   }
+   #core-expertise h1{
+    font-size: 30px;
+   }
+   #core-expertise h2{
+    font-size: 11px;
+   }
+   #core-expertise p{
+    font-size: 10px;
+   }
+   .test1{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 10px solid purple;
+    float: left;
+}
+   .services-list{
+    font-size: 12px;
+   }
+   .services-list h2{
+    font-size: 10px;
+   }
+   #experience h1{
+    font-size: 30px;
+   }
+   .experience-list{
+    font-size: 12px;
+   }
+   .experience-list{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 8px;
+    margin-top: 50px;
+    position: relative;
+}
+
+   #structure h1{
+    font-size: 30px;
+   }
+   .test3{
+    width: 350px;
+    height: 250px;
+    margin-left: 10px;
+   }
+   .structure-list h1{
+    font-size: 30px;
+   }
+   .structure-list p{
+    font-size: 12px;
+   }
+   .structure-list{
+    margin-top: 200px;
+   }
+   .bottom{
+    margin-top: 260px;
+   }
+   nav .fa-solid{
+    display: block;
+    font-size: 25px;
+   }
+   nav ul{
+    background: grey;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 300px;
+    height: 45vh;
     padding-top: 30px;
     z-index: 2;
     transition: right 0.5s;
