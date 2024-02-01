@@ -348,7 +348,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: rgb(225, 0, 255);
+    color: purple;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -374,7 +374,7 @@ nav ul li a:hover::after{
     transform: translateY(-5px);
 }
 .btn.btn2{ 
-    background: rgb(255, 0, 234);
+    background: purple;
     display: inline-block;
 }
 
@@ -509,6 +509,59 @@ nav .fa-solid{
     nav ul li a{
     font-size: 12px;
    }
+   .contact-left p{
+    font-size: 11px;
+   }
+   .contact-left h1{
+    font-size: 30px;
+   }
+
+   form input, form textarea{
+    width: 60%; 
+    border: 0;
+    outline: none;
+    background: whitesmoke;
+    padding: 10px;
+    margin: 5px 160px;
+    color: grey;
+    font-size: 13px;
+    border-radius: 6px;
+   }
+   .contact-right form{
+    margin-top: -60px;
+   }
+
+   form .btn2{
+    padding: 6px 10px;
+    font-size: 13px;
+    margin-top: 0px;
+    cursor: pointer;
+    margin: 2px 160px;
+    }
+    .head{
+        background: whitesmoke;
+        padding: 20px;
+        margin-top: 40px;
+        font-size: 13px;
+    }
+    .pic{
+        width: 100px;
+    }
+    .bottom{
+        background: whitesmoke;
+        padding: 20px;
+        margin-top: 300px;
+        font-size: 13px;
+    }
+    .contact-left p i{
+        font-size: 15px;
+    }
+    .contact-left{
+        flex-basis: 50%;
+    }
+    .social-icons a{
+        font-size: 20px;
+    }
   
 }
 
@@ -621,5 +674,63 @@ nav .fa-solid{
     font-size: 12px;
    }
   
+   .contact-left p{
+    font-size: 11px;
+   }
+   .contact-left h1{
+    font-size: 30px;
+   }
+
+   form input, form textarea{
+    width: 60%; 
+    border: 0;
+    outline: none;
+    background: whitesmoke;
+    padding: 10px;
+    margin: 5px 160px;
+    color: grey;
+    font-size: 13px;
+    border-radius: 6px;
+   }
+   .contact-right form{
+    margin-top: -60px;
+   }
+
+   form .btn2{
+    padding: 6px 10px;
+    font-size: 13px;
+    margin-top: 0px;
+    cursor: pointer;
+    margin: 2px 160px;
+    }
+    .head{
+        background: whitesmoke;
+        padding: 20px;
+        margin-top: 40px;
+        font-size: 13px;
+    }
+    .pic{
+        width: 100px;
+    }
+    .bottom{
+        background: whitesmoke;
+        padding: 20px;
+        margin-top: 40px;
+        font-size: 13px;
+    }
+    .contact-left p i{
+        font-size: 15px;
+    }
+    .contact-left{
+        flex-basis: 50%;
+    }
+    .social-icons a{
+        font-size: 20px;
+    }
+
+
+   
+   
+
 }
 
